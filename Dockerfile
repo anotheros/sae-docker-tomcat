@@ -17,7 +17,7 @@ RUN unzip apache-tomcat-8.0.36.zip
 RUN rm -rf tomcat
 RUN mv apache-tomcat-8.0.36 tomcat
 RUN rm -rf tomcat/conf
-CAPY conf tomcat
+COPY conf tomcat
 
 RUN chmod u+x tomcat -R
 
