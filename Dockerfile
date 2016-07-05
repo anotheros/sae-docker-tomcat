@@ -11,13 +11,13 @@ RUN apt-get update
 # 添加orache java8源，一次性安装vim，wget，curl，java8，tomcat8等必备软件
 RUN apt-get update
 RUN apt-get install -y vim wget curl zip tar
-RUN wget http://7xl6gx.com1.z0.glb.clouddn.com/apache-tomcat-8.0.36.zip  -O /data/apache-tomcat-8.0.36.zip 
-#RUN unzip /data/apache-tomcat-8.0.36.zip
-#RUN mv /data/apache-tomcat-8.0.36 /data/tomcat
+RUN wget http://7xl6gx.com1.z0.glb.clouddn.com/apache-tomcat-8.0.36.zip  -O apache-tomcat-8.0.36.zip 
+#RUN unzip apache-tomcat-8.0.36.zip
+#RUN yes | mv apache-tomcat-8.0.36 /data/tomcat
 
-RUN wget http://7xl6gx.com1.z0.glb.clouddn.com/jdk-8u92-linux-x64.tar.gz  -O /data/jdk-8u92-linux-x64.tar.gz 
-#RUN tar -zxvf /data/jdk-8u92-linux-x64.tar.gz
-#RUN mv /data/jdk1.8.0_92  /data/jdk
+RUN wget http://7xl6gx.com1.z0.glb.clouddn.com/jdk-8u92-linux-x64.tar.gz  -O jdk-8u92-linux-x64.tar.gz 
+#RUN tar -zxvf jdk-8u92-linux-x64.tar.gz
+#RUN  yes | mv jdk1.8.0_92  /data/jdk
 
 # 设置JAVA_HOME环境变量
 
@@ -32,4 +32,4 @@ ENV PATH $PATH:$JAVA_HOME/bin
 EXPOSE 5050
 
 # 设置Tomcat7初始化运行，SSH终端服务器作为后台运行
-CMD tomcat/bin/catalina.sh run
+CMD /data/tomcat/bin/catalina.sh run
