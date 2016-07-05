@@ -36,4 +36,4 @@ ENV PATH $PATH:$JAVA_HOME/bin
 EXPOSE 5050
 
 # 设置Tomcat7初始化运行，SSH终端服务器作为后台运行
-CMD /data/tomcat/bin/catalina.sh run
+CMD tomcat/bin/catalina.sh run
