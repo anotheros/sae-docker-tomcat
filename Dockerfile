@@ -7,11 +7,6 @@ MAINTAINER laozhang "zhangshanhai123@gmail.com"
 # 更新源，安装ssh server
 RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe"> /etc/apt/sources.list
 RUN apt-get update
-RUN apt-get install -y openssh-server
-RUN mkdir -p /var/run/sshd
-
-# 设置root ssh远程登录密码为123456
-RUN echo "root:123456" | chpasswd 
 
 # 添加orache java8源，一次性安装vim，wget，curl，java8，tomcat8等必备软件
 RUN apt-get install python-software-properties
