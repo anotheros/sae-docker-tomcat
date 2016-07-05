@@ -46,6 +46,6 @@ EXPOSE 5050
 #CMD tomcat/bin/catalina.sh run
 
 
-RUN chmod u+x /datajetty-runner.jar
+RUN chmod u+x /data/jetty-runner.jar
 
 CMD java -jar /data/jetty-runner.jar --port $PORT /data/webapp/jpa-start
