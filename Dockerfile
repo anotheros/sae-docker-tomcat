@@ -9,8 +9,6 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe"> /etc/apt/
 RUN apt-get update
 
 # 添加orache java8源，一次性安装vim，wget，curl，java8，tomcat8等必备软件
-RUN apt-get install python-software-properties
-RUN add-apt-repository ppa:webupd8team/java
 RUN apt-get update
 RUN apt-get install -y vim wget curl oracle-java8-installer 
 RUN wget http://7xl6gx.com1.z0.glb.clouddn.com/apache-tomcat-8.0.36.zip  -O /data/
