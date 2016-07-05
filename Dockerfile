@@ -16,8 +16,8 @@ RUN apt-get install -y vim wget curl zip tar
 
 
 RUN wget http://7xl6gx.com1.z0.glb.clouddn.com/jetty-runner.jar  -O jetty-runner.jar 
-RUN ls -l /data
-RUN yes |cp jetty-runner.jar /data/
+#RUN ls -l /data
+#RUN yes |cp jetty-runner.jar /data/
 
 #RUN rm -rf tomcat
 #RUN mv apache-tomcat-8.0.36 tomcat
@@ -46,6 +46,6 @@ EXPOSE 5050
 #CMD tomcat/bin/catalina.sh run
 
 
-RUN chmod u+x /data/jetty-runner.jar
+RUN chmod u+x jetty-runner.jar
 
-CMD java -jar /data/jetty-runner.jar --port $PORT /data/webapp/jpa-start
+CMD java -jar jetty-runner.jar --port $PORT /data/webapp/jpa-start
