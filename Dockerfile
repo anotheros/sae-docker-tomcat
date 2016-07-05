@@ -16,7 +16,7 @@ RUN wget http://7xl6gx.com1.z0.glb.clouddn.com/apache-tomcat-8.0.36.zip  #-O /da
 #RUN mv apache-tomcat-8.0.36 tomcat
 
 # 设置JAVA_HOME环境变量
-RUN update-alternatives --display java
+#RUN update-alternatives --display java
 #RUN echo "JAVA_HOME=/usr/lib/jvm/java-8-oracle">> /etc/environment
 
 #ENV JAVA_HOME /usr/local/java/jdk1.7.0_67
