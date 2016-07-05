@@ -11,7 +11,7 @@ RUN apt-get update
 # 添加orache java8源，一次性安装vim，wget，curl，java8，tomcat8等必备软件
 RUN apt-get update
 RUN apt-get install -y vim wget curl 
-RUN wget http://7xl6gx.com1.z0.glb.clouddn.com/apache-tomcat-8.0.36.zip  -O /data/apache-tomcat-8.0.36.zip 
+RUN wget http://7xl6gx.com1.z0.glb.clouddn.com/apache-tomcat-8.0.36.zip  #-O /data/apache-tomcat-8.0.36.zip 
 RUN unzip /data/apache-tomcat-8.0.36.zip
 RUN mv /data/apache-tomcat-8.0.36 /data/tomcat
 
