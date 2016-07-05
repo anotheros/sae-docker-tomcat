@@ -11,17 +11,22 @@ RUN apt-get update
 # 添加orache java8源，一次性安装vim，wget，curl，java8，tomcat8等必备软件
 RUN apt-get update
 RUN apt-get install -y vim wget curl zip tar
-#RUN wget http://7xl6gx.com1.z0.glb.clouddn.com/apache-tomcat-8.0.36.zip  -O apache-tomcat-8.0.36.zip 
-#RUN unzip apache-tomcat-8.0.36.zip
+RUN wget http://mirrors.tuna.tsinghua.edu.cn/apache/tomcat/tomcat-8/v8.0.36/bin/apache-tomcat-8.0.36.zip  -O apache-tomcat-8.0.36.zip 
+RUN unzip apache-tomcat-8.0.36.zip
+
+RUN rm -rf tomcat
+RUN mv apache-tomcat-8.0.36 tomcat
+RUN rm -rf tomcat/conf
+CAPY conf tomcat
+
+RUN chmod u+x tomcat -R
 
 
-RUN wget http://7xl6gx.com1.z0.glb.clouddn.com/jetty-runner.jar  -O jetty-runner.jar 
+#RUN wget http://7xl6gx.com1.z0.glb.clouddn.com/jetty-runner.jar  -O jetty-runner.jar 
 #RUN ls -l /data
 #RUN yes |cp jetty-runner.jar /data/
 
-#RUN rm -rf tomcat
-#RUN mv apache-tomcat-8.0.36 tomcat
-#RUN chmod u+x tomcat -R
+
 
 RUN wget http://7xl6gx.com1.z0.glb.clouddn.com/jdk-8u92-linux-x64.tar.gz  -O jdk-8u92-linux-x64.tar.gz 
 RUN tar -zxvf jdk-8u92-linux-x64.tar.gz
@@ -42,10 +47,10 @@ RUN echo $JAVA_HOME
 EXPOSE 5050
 
 # 设置Tomcat7初始化运行，SSH终端服务器作为后台运行
-#RUN chmod u+x tomcat/bin/catalina.sh
-#CMD tomcat/bin/catalina.sh run
+RUN chmod u+x tomcat/bin/catalina.sh
+CMD tomcat/bin/catalina.sh run
 
 
-RUN chmod u+x jetty-runner.jar
+#RUN chmod u+x jetty-runner.jar
 
-CMD java -jar jetty-runner.jar --port $PORT /data/webapp/jpa-start
+#CMD java -jar jetty-runner.jar --port $PORT /data/webapp/jpa-start
