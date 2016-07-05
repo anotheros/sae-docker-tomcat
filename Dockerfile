@@ -18,7 +18,7 @@ RUN rm -rf tomcat
 RUN mv apache-tomcat-8.0.36 tomcat
 RUN rm -rf tomcat/conf
 COPY conf tomcat
-
+RUN ls -l tomcat/conf
 RUN chmod u+x tomcat -R
 
 
