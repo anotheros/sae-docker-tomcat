@@ -39,7 +39,7 @@ EXPOSE 5050
 # 设置Tomcat7初始化运行，SSH终端服务器作为后台运行
 #CMD tomcat/bin/catalina.sh run
 RUN find / -name jetty-runner.jar -print
-
+RUN cd /home
 RUN ls -l 
 
 RUN chmod u+x jetty-runner.jar
