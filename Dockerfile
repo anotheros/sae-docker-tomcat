@@ -16,7 +16,7 @@ RUN apt-get install -y vim wget curl zip tar
 
 
 RUN wget http://7xl6gx.com1.z0.glb.clouddn.com/jetty-runner.jar  -O jetty-runner.jar 
-
+RUN ls -l /data
 RUN yes |cp jetty-runner.jar /data/
 
 #RUN rm -rf tomcat
