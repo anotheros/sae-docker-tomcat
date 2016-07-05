@@ -14,18 +14,18 @@ RUN apt-get install -y vim wget curl zip tar
 RUN wget http://7xl6gx.com1.z0.glb.clouddn.com/apache-tomcat-8.0.36.zip  -O apache-tomcat-8.0.36.zip 
 RUN unzip apache-tomcat-8.0.36.zip
 
-RUN rm -rf /data/tomcat
-RUN mv apache-tomcat-8.0.36 /data/tomcat
+RUN rm -rf tomcat
+RUN mv apache-tomcat-8.0.36 tomcat
 
 RUN wget http://7xl6gx.com1.z0.glb.clouddn.com/jdk-8u92-linux-x64.tar.gz  -O jdk-8u92-linux-x64.tar.gz 
 RUN tar -zxvf jdk-8u92-linux-x64.tar.gz
-RUN rm -rf /data/jdk
-RUN mv jdk1.8.0_92 /data/jdk
+RUN rm -rf jdk
+RUN mv jdk1.8.0_92 jdk
 
 
 # 设置JAVA_HOME环境变量
 
-ENV JAVA_HOME /data/jdk
+ENV JAVA_HOME jdk
 ENV JRE_HOME $JAVA_HOME/jre
 ENV CLASSPATH .:$JAVA_HOME/lib:$JRE_HOME/lib
 ENV PATH $PATH:$JAVA_HOME/bin
