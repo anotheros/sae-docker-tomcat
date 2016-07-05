@@ -3,7 +3,7 @@
 FROM ubuntu
 # 签名啦
 MAINTAINER laozhang "zhangshanhai123@gmail.com"
-copy aaa.txt
+RUN copy aaa.txt
 # 更新源
 RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe"> /etc/apt/sources.list
 RUN apt-get update
