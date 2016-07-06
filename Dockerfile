@@ -3,7 +3,7 @@
 FROM ubuntu
 # 签名啦
 MAINTAINER laozhang "zhangshanhai123@gmail.com"
-COPY aaa.txt /
+#COPY ROOT /ROOT # 第一个地址为git里面 的编译好的java程序，第二个为tomcat/conf 里最后面 docBase 的路径 
 # 更新源
 RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe"> /etc/apt/sources.list
 RUN apt-get update
@@ -22,9 +22,7 @@ RUN ls -l tomcat/conf
 RUN chmod u+x tomcat -R
 
 
-#RUN wget http://7xl6gx.com1.z0.glb.clouddn.com/jetty-runner.jar  -O jetty-runner.jar 
-#RUN ls -l /data
-#RUN yes |cp jetty-runner.jar /data/
+
 
 
 
@@ -50,7 +48,3 @@ EXPOSE 5050
 RUN chmod u+x tomcat/bin/catalina.sh
 CMD tomcat/bin/catalina.sh run
 
-
-#RUN chmod u+x jetty-runner.jar
-
-#CMD java -jar jetty-runner.jar --port $PORT /data/webapp/jpa-start
