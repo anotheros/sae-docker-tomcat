@@ -3,14 +3,14 @@
 FROM ubuntu
 # 签名啦
 MAINTAINER laozhang "zhangshanhai123@gmail.com"
-#COPY ROOT /ROOT # 第一个地址为git里面 的编译好的java程序，第二个为tomcat/conf 里最后面 docBase 的路径 
-COPY dsp.web /data/webapp/dsp.web
+
+
 # 更新源
 RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe"> /etc/apt/sources.list
-RUN apt-get update
+
 
 # 添加orache java8源，一次性安装vim，wget，curl，java8，tomcat8等必备软件
-#RUN apt-get update
+RUN apt-get update
 RUN apt-get install -y vim wget curl zip tar
 RUN wget http://mirrors.tuna.tsinghua.edu.cn/apache/tomcat/tomcat-8/v8.0.36/bin/apache-tomcat-8.0.36.zip  -O apache-tomcat-8.0.36.zip 
 RUN unzip apache-tomcat-8.0.36.zip
@@ -21,9 +21,11 @@ RUN rm -rf tomcat/conf
 COPY conf tomcat/conf
 RUN ls -l tomcat/conf
 RUN chmod u+x tomcat -R
+RUN rm -rf tomcat/webapps/ROOT
 
-
-
+COPY ROOT /tomcat/webapps/ROOT
+#RUN ls -l /tomcat/webapps
+RUN ls -l /tomcat/webapps/ROOT # 第一个地址为git里面 的编译好的java程序，第二个为tomcat/conf 里最后面 docBase 的路径 
 
 
 
