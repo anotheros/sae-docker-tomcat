@@ -1,0 +1,258 @@
+.personal_left {
+	background: rgb(45, 159, 219); width: 180px; margin-top: 89px; float: left; position: relative;
+}
+.personal_left .sidebar {
+	background: rgb(45, 159, 219); overflow: hidden;
+}
+.personal_left .move_text {
+	top: 0px; width: 110px; height: 40px; right: -125px; color: rgb(255, 255, 255); display: none; position: absolute; z-index: 10;
+}
+.personal_left .move_text_bg {
+	left: 0px; top: 0px; width: 110px; height: 40px; position: absolute;
+}
+.personal_left .move_text span {
+	border-width: 10px; border-style: solid; border-color: transparent rgb(128, 128, 128) transparent transparent; left: -20px; top: 10px; width: 0px; height: 0px; position: absolute; z-index: 4;
+}
+.personal_left .move_text .text {
+	background: rgb(128, 128, 128); left: 0px; top: 0px; width: 110px; height: 40px; text-align: center; color: rgb(255, 255, 255); line-height: 40px; font-size: 12px; position: absolute; z-index: 5;
+}
+.mini.personal_left {
+	width: 55px;
+}
+.mini.personal_left .mini_hide {
+	transition:0.2s; display: none; -o-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -webkit-transition: all 0.2s ease;
+}
+.mini.personal_left .sidebar_nav .uls li .lis li .name {
+	transition:0.2s; display: none; -o-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -webkit-transition: all 0.2s ease;
+}
+.mini.personal_left .mini_hide {
+	position: absolute;
+}
+.mini.personal_left .sidebar_header {
+	background: url("../img/icon66.png") no-repeat center rgb(31, 77, 101); width: 55px;
+}
+.personal_left .sidebar_header {
+	background: url("../img/icon67.png") no-repeat center rgb(31, 77, 101); width: 180px; height: 40px; cursor: pointer;
+}
+.personal_left .sidebar_nav {
+	width: 197px; -ms-overflow-y: scroll;
+}
+.mini.personal_left .sidebar_nav {
+	width: 72px;
+}
+.personal_left .sidebar_nav .uls li {
+	line-height: 40px;
+}
+.personal_left .sidebar_nav .uls li .uls_header {
+	background: rgb(31, 141, 200); line-height: 40px; overflow: hidden; clear: both; position: relative; cursor: pointer;
+}
+.personal_left .sidebar_nav .uls li .uls_header .left {
+	background: url("../img/icon69.png") no-repeat center; width: 55px; height: 40px; float: left; display: block;
+}
+.personal_left .sidebar_nav .uls li .active.uls_header .left {
+	background: url("../img/icon68.png") no-repeat center;
+}
+.personal_left .sidebar_nav .uls li .uls_header .center {
+	color: rgb(255, 255, 255); font-size: 12px;
+}
+.personal_left .sidebar_nav .uls li .uls_header .right {
+	top: 0px; width: 40px; height: 35px; right: 0px; padding-top: 5px; vertical-align: middle; position: absolute;
+}
+.personal_left .sidebar_nav .uls li .uls_header .right a {
+	width: 100%; height: 35px; text-align: center; color: rgb(160, 171, 179); line-height: 40px; padding-top: 5px; font-size: 14px; text-decoration: none; display: block;
+}
+.personal_left .sidebar_nav .uls li .uls_header .right a img {
+	width: 20px; height: 20px; max-width: 20px;
+}
+.personal_left .sidebar_nav .uls li .lis {
+	font-size: 12px; display: none;
+}
+.personal_left .sidebar_nav .uls li .lis li:hover {
+	background: rgb(126, 205, 244);
+}
+.personal_left .sidebar_nav .uls li .lis li.active {
+	background: rgb(126, 205, 244);
+}
+.personal_left .sidebar_nav .uls li .lis li a {
+	width: 100%; height: 40px; color: rgb(255, 255, 255); line-height: 40px; overflow: hidden; text-decoration: none; display: block;
+}
+.personal_left .sidebar_nav .uls li .lis li .icon {
+	width: 55px; height: 32px; text-align: center; padding-top: 10px; font-size: 16px; float: left;
+}
+.personal_left .sidebar_nav .uls li .lis li .icon img {
+	margin: 0px auto; display: block;
+}
+.personal_left .sidebar_nav .uls li .lis li .name {
+	float: left; display: block;
+}
+.personal_right {
+	left: 180px; top: 89px; width: auto; right: 0px; bottom: 0px; position: absolute; min-width: 1200px;
+}
+.mini.personal_right {
+	left: 55px;
+}
+.personal_right .personal_right_box {
+	transition:0.2s; left: 165px; top: 0px; width: auto; right: 0px; bottom: 0px; padding-right: 40px; padding-left: 40px; position: absolute; z-index: 6; -ms-overflow-x: hidden; -ms-overflow-y: auto; -o-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -webkit-transition: all 0.2s ease;
+}
+.personal_right .mini.personal_right_box {
+	left: 0px;
+}
+.personal_right .personal_head {
+	padding: 15px 0px 10px; width: 100%; height: 25px; line-height: 25px; border-bottom-color: rgb(220, 220, 220); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.personal_right .personal_head span {
+	height: 25px; color: rgb(94, 94, 94); line-height: 25px; padding-left: 20px; font-size: 14px; border-left-color: rgb(88, 176, 239); border-left-width: 3px; border-left-style: solid; float: left; display: block;
+}
+.personal_right .personal_head span a {
+	height: 25px; color: rgb(94, 94, 94); line-height: 25px; font-size: 14px; text-decoration: none; display: block;
+}
+.personal_right .personal_head .span2 {
+	height: 25px; color: rgb(37, 174, 228); line-height: 25px; padding-left: 10px; font-size: 14px; float: left;
+}
+.personal_right .personal_head .order_select {
+	background: rgb(244, 248, 251); border: 1px solid rgb(219, 220, 222); border-image: none; width: 100px; height: 20px; margin-right: 25px; float: right;
+}
+.personal_right .personal_head .switch {
+	width: 90px; height: 25px; line-height: 25px; margin-left: 30px;
+}
+.personal_right .personal_head .switch .switch-animate {
+	width: 135px; height: 25px; line-height: 25px;
+}
+.personal_right .personal_head .switch .switch-animate span {
+	width: 45px; height: 25px; line-height: 25px;
+}
+.personal_right .personal_head .right {
+	margin-right: 80px; float: right;
+}
+.personal_right .personal_head .right li {
+	width: 22px; height: 22px; margin-left: 15px; float: left; cursor: pointer;
+}
+.personal_right .personal_head .right li:hover {
+	background: rgb(228, 238, 243);
+}
+.personal_right .personal_head .right li.active {
+	background: rgb(203, 232, 246); border: 1px solid rgb(38, 160, 218); border-image: none;
+}
+.personal_right .fenlei1 .abs {
+	left: 30px; top: 0px; width: 480px; display: none; position: absolute; z-index: 100;
+}
+.personal_right .fenlei2 .abs {
+	left: 30px; top: 0px; width: 480px; display: none; position: absolute; z-index: 100;
+}
+.personal_right .fenlei1 .abs i {
+	background: rgb(225, 225, 225); padding: 5px; border-radius: 3px; width: auto; color: rgb(171, 171, 171); line-height: 25px; font-size: 14px; display: inline-block; max-width: 480px;
+}
+.personal_right .fenlei2 .abs i {
+	background: rgb(225, 225, 225); padding: 5px; border-radius: 3px; width: auto; color: rgb(171, 171, 171); line-height: 25px; font-size: 14px; display: inline-block; max-width: 480px;
+}
+.personal_right .switch {
+	border-width: 1px; border-style: solid; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border-radius: 5px; border-image: none; width: 100px; height: 33px; text-align: left; line-height: 8px; overflow: hidden; float: left; position: relative; cursor: pointer; -ms-user-select: none; -webkit-border-radius: 5px; -moz-border-radius: 5px; -webkit-user-select: none; -moz-user-select: none; -o-user-select: none; user-select: none;
+}
+.personal_right .switch .switch-animate {
+	transition:left 0.5s; top: 0px; width: 150px; height: 33px; display: inline-block; position: relative; -o-transition: left 0.5s; -moz-transition: left 0.5s; -webkit-transition: left 0.5s;
+}
+.personal_right .switch .switch-on.switch-animate {
+	left: 0px;
+}
+.personal_right .switch .switch-off.switch-animate {
+	left: -50%;
+}
+.personal_right .switch .switch-animate span {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; width: 50px; height: 33px; text-align: center; line-height: 33px; font-size: 12px; float: left; display: block;
+}
+.personal_right .switch .switch-animate .left {
+	background: rgb(255, 153, 87); color: rgb(255, 255, 255);
+}
+.personal_right .switch .switch-animate .center {
+	background: rgb(227, 231, 235);
+}
+.personal_right .switch .switch-animate .right {
+	background: rgb(203, 209, 215);
+}
+.personal_right .xuanzefenlei {
+	height: 40px; margin-top: 20px; position: relative;
+}
+.personal_right .fenlei {
+	overflow: hidden; margin-right: 20px; float: left;
+}
+.personal_right .biaoqian {
+	overflow: hidden; margin-right: 20px; float: left;
+}
+.personal_right .fenlei1 {
+	width: 22px; height: 22px; margin-top: 5px; margin-right: 20px; margin-left: 10px; float: left; position: relative;
+}
+.personal_right .fenlei2 {
+	width: 22px; height: 22px; margin-top: 5px; margin-right: 20px; margin-left: 10px; float: left; position: relative;
+}
+.personal_right .fenlei2 {
+	margin-top: 10px; margin-left: 0px;
+}
+.personal_right .fenlei1 .fenleibox {
+	left: 0px; top: 0px; position: absolute;
+}
+.personal_right .fenleibox.fenlei2 {
+	left: 0px; top: 0px; position: absolute;
+}
+.personal_right .fenlei1 .fenleibox img {
+	width: 20px; height: 20px; cursor: pointer;
+}
+.personal_right .fenlei2 .fenleibox img {
+	width: 20px; height: 20px; cursor: pointer;
+}
+.personal_right .fenlei span {
+	width: 65px; height: 30px; line-height: 30px; font-size: 12px; float: left; display: block;
+}
+.personal_right .biaoqian span {
+	width: 65px; height: 30px; line-height: 30px; font-size: 12px; float: left; display: block;
+}
+.personal_right .fenlei .right {
+	height: 32px; line-height: 30px; float: left;
+}
+.personal_right .biaoqian .right {
+	height: 32px; line-height: 30px; float: left;
+}
+.personal_right .fenlei .right select {
+	width: 100px; height: 30px; line-height: 30px;
+}
+.personal_right .biaoqian .right select {
+	width: 100px; height: 30px; line-height: 30px;
+}
+.personal_right .fenlei .right select option {
+	height: 30px; line-height: 30px;
+}
+.personal_right .biaoqian .right select option {
+	height: 30px; line-height: 30px;
+}
+.text_name {
+	position: relative;
+}
+.newFeatures_z {
+	width: 40px; height: 40px; text-align: left; float: right; display: none; position: relative;
+}
+.newFeatures_z i {
+	border-radius: 50%; width: 8px; height: 8px; margin-top: 16px; display: inline-block; box-shadow: 0.5px 0.3px #af2f23; background-color: rgb(249, 60, 65);
+}
+.newFeatures_z span {
+	background: rgb(204, 204, 204); border-radius: 50%; display: none; position: absolute;
+}
+.newFeatures_z .circle1 {
+	left: -7px; top: 13px; width: 6px; height: 6px;
+}
+.newFeatures_z .circle2 {
+	left: 8px; top: 22px; width: 6px; height: 6px;
+}
+.newFeatures_z .circle3 {
+	left: -3px; top: 25px; width: 6px; height: 6px;
+}
+.newFeatures_z .circle5 {
+	left: 6px; top: 10px; width: 6px; height: 6px;
+}
+.newFeatures_z .circle4 {
+	left: 0px; top: 16px; width: 8px; height: 8px;
+}
+.active.newFeatures_z {
+	display: block;
+}
+.aClick {
+	display: none;
+}

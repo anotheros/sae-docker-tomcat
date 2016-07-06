@@ -1,0 +1,93 @@
+.personal_right .jibenziliao .jibenziliao_box1 {
+	margin-top: 30px; margin-left: 10px;
+}
+.personal_right .jibenziliao .jibenziliao_box1 li {
+	line-height: 33px; overflow: hidden; clear: both; font-size: 12px; margin-top: 10px;
+}
+.personal_right .jibenziliao .jibenziliao_box1 li b {
+	color: red;
+}
+.personal_right .jibenziliao .jibenziliao_box1 li span.left {
+	width: 70px; height: 33px; line-height: 33px; margin-right: 20px; float: left; display: block;
+}
+.personal_right .jibenziliao .jibenziliao_box1 li .right {
+	font-size: 12px; float: left;
+}
+.personal_right .jibenziliao .jibenziliao_box1 li .right .edition {
+	
+}
+.personal_right .jibenziliao .jibenziliao_box1 li .right .edition span {
+	float: left; display: block;
+}
+.personal_right .jibenziliao .jibenziliao_box1 li .right .edition p {
+	color: rgb(51, 51, 51); margin-left: 15px; float: left; display: block;
+}
+.personal_right .jibenziliao .jibenziliao_box1 li .right .edition p.active {
+	color: rgb(232, 43, 26);
+}
+.personal_right .jibenziliao .jibenziliao_box1 li .right .edition a {
+	border-radius: 3px; border: 1px solid rgb(60, 177, 231); border-image: none; width: 41px; height: 16px; text-align: center; color: rgb(60, 177, 231); line-height: 16px; text-decoration: none; margin-top: 7px; margin-left: 20px; float: left; display: block;
+}
+.personal_right .jibenziliao .jibenziliao_box1 li .right .edition a:hover {
+	background: rgb(60, 177, 231); color: rgb(255, 255, 255);
+}
+.personal_right .jibenziliao .jibenziliao_box1 li .right .radio {
+	width: 13px; height: 13px;
+}
+.personal_right .jibenziliao .jibenziliao_box1 li .right input {
+	width: 300px; height: 26px;
+}
+.personal_right .jibenziliao .jibenziliao_box1 li .right .text {
+	color: rgb(153, 153, 153); line-height: 20px; clear: both; margin-top: 5px; display: block;
+}
+.personal_right .jibenziliao .jibenziliao_box2 {
+	overflow: hidden; clear: both; margin-top: 20px; margin-left: 10px;
+}
+.personal_right .jibenziliao .jibenziliao_box2 .left {
+	height: 35px; line-height: 35px; font-size: 12px; margin-right: 15px; float: left; display: block;
+}
+.personal_right .jibenziliao .jibenziliao_box2 .fl {
+	margin-right: 0px; float: left;
+}
+.personal_right .jibenziliao .jibenziliao_box2 .left b {
+	color: red;
+}
+.personal_right .jibenziliao .jibenziliao_box2 .right {
+	background: rgb(234, 237, 242); border: 1px solid rgb(255, 255, 255); border-image: none; width: 155px; height: 32px; text-align: center; color: rgb(102, 96, 106); line-height: 32px; font-size: 12px; text-decoration: none; margin-left: 15px; float: left; display: block;
+}
+.personal_right .jibenziliao .jibenziliao_box2 .select {
+	margin-top: 5px;
+}
+.personal_right .jibenziliao .jibenziliao_box2 .select .xuanze {
+	background: url("../img/icon118.png") no-repeat right 11px; width: 120px; height: 30px; color: rgb(10, 94, 208); line-height: 30px; font-size: 12px; cursor: pointer;
+}
+.personal_right .jibenziliao .jibenziliao_box2 .select .active.xuanze {
+	background: url("../img/icon68.png") no-repeat right 11px;
+}
+.personal_right .jibenziliao .jibenziliao_box2 .select select {
+	width: 150px; height: 30px; font-size: 12px;
+}
+.personal_right .jibenziliao .jibenziliao_box2 .text {
+	width: 645px; overflow: hidden; margin-top: 10px;
+}
+.personal_right .jibenziliao .jibenziliao_box2 .text li {
+	width: 155px; text-align: center; margin-right: 5px; margin-bottom: 5px; float: left; position: relative;
+}
+.personal_right .jibenziliao .jibenziliao_box2 .text li.active a {
+	background: rgb(255, 255, 255); border: 1px solid rgb(51, 204, 102); border-image: none;
+}
+.personal_right .jibenziliao .jibenziliao_box2 .text li.active .icon2 {
+	display: inline;
+}
+.personal_right .jibenziliao .jibenziliao_box2 .text li a {
+	background: rgb(234, 237, 242); border: 1px solid rgb(255, 255, 255); border-image: none; width: 155px; height: 32px; text-align: center; color: rgb(102, 96, 106); line-height: 32px; font-size: 12px; text-decoration: none; display: block;
+}
+.personal_right .jibenziliao .jibenziliao_box2 .text li span.icon1 {
+	margin-left: 5px; display: none;
+}
+.personal_right .jibenziliao .jibenziliao_box2 .text li span.icon2 {
+	margin-left: 5px; display: none;
+}
+.personal_right .jibenziliao .jibenziliao_box2 .text li span.active.icon2 {
+	margin-left: 5px; display: inline;
+}
