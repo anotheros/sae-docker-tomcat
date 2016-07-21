@@ -6,7 +6,7 @@ MAINTAINER laozhang "zhangshanhai123@gmail.com"
 
 
 # 更新源
-RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe"> /etc/apt/sources.list
+RUN echo "deb http://mirrors.163.com/ubuntu precise main universe"> /etc/apt/sources.list
 
 
 # 添加orache java8源，一次性安装vim，wget，curl，java8，tomcat8等必备软件
